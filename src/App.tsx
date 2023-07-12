@@ -1,6 +1,10 @@
 import "./styles/global.css";
 function App() {
-  return <div>test</div>;
+  return (
+    <div>
+      <h1>home</h1>
+    </div>
+  );
 }
 
 export default App;
