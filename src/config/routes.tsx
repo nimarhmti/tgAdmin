@@ -5,6 +5,8 @@ import {
   AddQuestion,
   HomePage,
 } from "../pages/index";
+import { createBrowserRouter } from "react-router-dom";
+import { Authorization } from "../Authorization";
 
 interface routeModel {
   id: string;
@@ -46,4 +48,14 @@ const routes: routeModel[] = [
   },
 ];
 
-export default routes;
+export const router = createBrowserRouter(
+  routes.map((route: routeModel) => ({
+    id: route.id,
+    path: route.path,
+    element: route.private ? (
+      <Authorization>{route.component}</Authorization>
+    ) : (
+      route.component
+    ),
+  }))
+);
