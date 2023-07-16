@@ -8,12 +8,15 @@ import {
 import { createBrowserRouter } from "react-router-dom";
 import { Authorization } from "../Authorization";
 
+//routes model
 interface routeModel {
   id: string;
   path: string;
   private: boolean;
   component: React.ReactNode;
 }
+
+//routes item
 
 const routes: routeModel[] = [
   {
@@ -47,7 +50,7 @@ const routes: routeModel[] = [
     component: <AddQuestion />,
   },
 ];
-
+//routes generator
 export const router = createBrowserRouter(
   routes.map((route: routeModel) => ({
     id: route.id,
