@@ -8,7 +8,7 @@ module.exports = {
       },
       colors: {
         "login-form-bg": "#CDD7D8",
-        "Input-color": "#f1f3f5",
+        "input-color": "#868e96",
       },
     },
   },

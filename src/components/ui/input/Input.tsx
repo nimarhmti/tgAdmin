@@ -6,7 +6,7 @@ interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
   width?: string;
 }
 let defaultStyle =
-  "mt-1 block px-3 py-2 text-gray-600 bg-white border border-slate-300 rounded-md text-sm shadow-sm placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500";
+  "mt-1 block px-3 py-2 font- text-input-color bg-white border border-slate-300 rounded-md text-sm shadow-sm placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500";
 
 const Input: ForwardRefRenderFunction<HTMLInputElement, InputProps> = (
   { name, width, label, ...otherProps },
@@ -15,11 +15,13 @@ const Input: ForwardRefRenderFunction<HTMLInputElement, InputProps> = (
   defaultStyle += width;
 
   return (
-    <label
-      htmlFor={name}
-      className="block mb-2 text-sm font-medium text-gray-900"
-    >
-      {label}
+    <>
+      <label
+        htmlFor={name}
+        className="block mb-2 text-sm font-medium text-gray-900"
+      >
+        {label}
+      </label>
       <input
         className={defaultStyle}
         id={name}
@@ -27,7 +29,7 @@ const Input: ForwardRefRenderFunction<HTMLInputElement, InputProps> = (
         ref={ref}
         {...otherProps}
       />
-    </label>
+    </>
   );
 };
 
