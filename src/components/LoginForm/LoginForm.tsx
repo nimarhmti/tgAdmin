@@ -1,5 +1,11 @@
-import React from "react";
+import { useState } from "react";
+import FormInput from "../ui/input/Input";
 
 export const LoginForm = () => {
-  return <div>Loginform</div>;
+  return (
+    <form>
+      <FormInput />
+      <FormInput />
+    </form>
+  );
 };
