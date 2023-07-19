@@ -4,6 +4,7 @@
     "LOGIN": "ورود",
     "SIGN_IN": "ثبت نام ",
     "USERNAME": "نام کاربری",
-    "PASSWORD": "رمز"
+    "PASSWORD": "رمز",
+    "REPEAT_PASSWORD": "تکرار رمز"
   }
 }
