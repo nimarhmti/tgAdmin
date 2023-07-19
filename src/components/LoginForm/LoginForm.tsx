@@ -1,6 +1,9 @@
 import { useState, FormEvent } from "react";
 import FormInput from "../ui/input/Input";
-
+import facebook from "../../assets/icons/facebook.png";
+import instagram from "../../assets/icons/instagram.png";
+import telegram from "../../assets/icons/telegram.png";
+import twitter from "../../assets/icons/twitter.png";
 import translate from "../../assets/translate/translate.json";
 import { type } from "os";
 
@@ -44,6 +47,7 @@ export const LoginForm = ({ isLogin }: Props) => {
         label={translate.HOME_PAGE.USERNAME}
         type="text"
         placeholder="example1122"
+        ltr={true}
       />
       {!isLogin ? (
         <FormInput
@@ -53,6 +57,7 @@ export const LoginForm = ({ isLogin }: Props) => {
           label={translate.HOME_PAGE.EMAIL}
           type="text"
           placeholder="example@email.com"
+          ltr={true}
         />
       ) : null}
 
@@ -62,6 +67,7 @@ export const LoginForm = ({ isLogin }: Props) => {
         value={loginInfo.password}
         label={translate.HOME_PAGE.PASSWORD}
         type="password"
+        ltr={true}
       />
       {!isLogin ? (
         <FormInput
@@ -70,8 +76,15 @@ export const LoginForm = ({ isLogin }: Props) => {
           value={loginInfo.repeatPassword}
           label={translate.HOME_PAGE.REPEAT_PASSWORD}
           type="password"
+          ltr={true}
         />
       ) : null}
+      <p
+        className="text-sm cursor-pointer text-gray-500 hover:text-sky-600 font-bold mr-1"
+        style={{ fontSize: "0.7rem" }}
+      >
+        {translate.HOME_PAGE.FORGET_PASSWORD}
+      </p>
       <div className="flex justify-end gap-2">
         <button
           className={isLogin ? "btn btn-red" : "btn btn-green"}
@@ -79,6 +92,15 @@ export const LoginForm = ({ isLogin }: Props) => {
         >
           {isLogin ? translate.HOME_PAGE.LOGIN : translate.HOME_PAGE.SIGN_IN}
         </button>
+      </div>
+      <div className="bg-gray-400 rounded-sm h-8">
+        <hr />
+      </div>
+      <div className="flex justify-center gap-5 px-1 items-center mt-3">
+        <img src={facebook} alt="facebook" className="w-10" />
+        <img src={telegram} alt="telegram" className="w-10" />
+        <img src={instagram} alt="instagram" className="w-10" />
+        <img src={twitter} alt="twitter" className="w-10" />
       </div>
     </form>
   );

@@ -5,6 +5,7 @@
     "SIGN_IN": "ثبت نام ",
     "USERNAME": "نام کاربری",
     "PASSWORD": "رمز",
-    "REPEAT_PASSWORD": "تکرار رمز"
+    "REPEAT_PASSWORD": "تکرار رمز",
+    "FORGET_PASSWORD": "فراموشی رمز عبور ؟"
   }
 }
