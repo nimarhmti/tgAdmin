@@ -45,3 +45,11 @@ a {
 .btn-red {
   @apply bg-red-400 text-white;
 }
+
+.sidebar {
+  @apply flex items-center border-b border-b-gray-600;
+}
+
+.navItem {
+  @apply text-indigo-100 hover:bg-slate-700 flex transition-colors duration-300;
+}

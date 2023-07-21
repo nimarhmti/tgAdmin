@@ -7,7 +7,7 @@ import {
   InboxIcon,
   DocumentPlusIcon,
 } from "@heroicons/react/24/solid";
-interface navItemModel {
+export interface navItemModel {
   id: string;
   label: string;
   to: string;
