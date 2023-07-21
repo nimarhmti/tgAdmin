@@ -4,6 +4,7 @@ import {
   QuestionBank,
   AddQuestion,
   HomePage,
+  Inbox,
 } from "../pages/index";
 import { createBrowserRouter } from "react-router-dom";
 import { Authorization } from "../Authorization";
@@ -48,6 +49,12 @@ const routes: routeModel[] = [
     path: "/addQuestion",
     private: true,
     component: <AddQuestion />,
+  },
+  {
+    id: "inbox",
+    path: "/inbox",
+    private: true,
+    component: <Inbox />,
   },
 ];
 //routes generator

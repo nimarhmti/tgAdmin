@@ -7,5 +7,12 @@
     "PASSWORD": "رمز",
     "REPEAT_PASSWORD": "تکرار رمز",
     "FORGET_PASSWORD": "فراموشی رمز عبور ؟"
+  },
+  "SIDEBAR": {
+    "DASHBOARD": "داشبورد",
+    "MEMBERS": "اعضا",
+    "QUESTION_LIST": "لیست سوالات",
+    "ADD_QUESTIONS": "طرح سوالات",
+    "INBOX": "مدیریت"
   }
 }

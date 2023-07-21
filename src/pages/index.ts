@@ -1,5 +1,6 @@
-export { HomePage } from "./HomePage/HomePage";
-export { AddQuestion } from "./AddQuestions/addQuestion";
-export { Dashboard } from "./Dashboard/Dashboard";
-export { Members } from "./Members/Members";
-export { QuestionBank } from "./QuestionBank/QuestionBank";
+export * from "./HomePage/HomePage";
+export * from "./AddQuestions/addQuestion";
+export * from "./Dashboard/Dashboard";
+export * from "./Members/Members";
+export * from "./QuestionBank/QuestionBank";
+export * from "./Inbox/Inbox";
