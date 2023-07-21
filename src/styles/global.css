@@ -53,3 +53,7 @@ a {
 .navItem {
   @apply text-indigo-100 hover:bg-slate-700 flex transition-colors duration-300;
 }
+
+.profile-section {
+  @apply grid place-content-stretch p-4 mt-auto;
+}
