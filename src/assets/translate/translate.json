@@ -9,10 +9,12 @@
     "FORGET_PASSWORD": "فراموشی رمز عبور ؟"
   },
   "SIDEBAR": {
+    "ADMIN_PANEL": "پنل ادمین",
     "DASHBOARD": "داشبورد",
     "MEMBERS": "اعضا",
     "QUESTION_LIST": "لیست سوالات",
     "ADD_QUESTIONS": "طرح سوالات",
-    "INBOX": "مدیریت"
+    "INBOX": "مدیریت",
+    "VIEW_PROFILE": "پروفایل"
   }
 }

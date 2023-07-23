@@ -57,3 +57,13 @@ a {
 .profile-section {
   @apply grid place-content-stretch p-4 mt-auto;
 }
+.navbar {
+  @apply bg-slate-50 text-zinc-500 flex items-center w-screen md:w-full sticky z-10 px-4 shadow-md h-[73px] top-0;
+}
+
+.aside {
+  @apply bg-sky-900 text-zinc-50 z-20 transition-all duration-300 ease-in-out fixed md:static md:translate-x-0;
+}
+.chip {
+  @apply cursor-pointer relative inline-block select-none whitespace-nowrap rounded-lg py-2 px-3.5 align-baseline  text-xs font-bold uppercase leading-none text-white;
+}
