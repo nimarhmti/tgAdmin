@@ -68,5 +68,5 @@ a {
   @apply cursor-pointer relative inline-block select-none whitespace-nowrap rounded-lg py-2 px-3.5 align-baseline  text-xs font-bold uppercase leading-none text-white;
 }
 .card {
-  @apply shadow-md py-2 px-2 rounded-md bg-card-color inline-block items-center;
+  @apply shadow-md py-2 px-2 rounded-md bg-card-color;
 }
