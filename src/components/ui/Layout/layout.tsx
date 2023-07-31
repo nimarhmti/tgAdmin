@@ -24,7 +24,7 @@ export const Layout: FC<PropsWithChildren> = ({ children }) => {
         onCollapsed={onCollapsed}
         shown={showSidebar}
       />
-      <div>
+      <div className="h-screen bg-white">
         <Navbar
           onMenuButtonClick={() => setShowSidebar((prevState) => !prevState)}
         />

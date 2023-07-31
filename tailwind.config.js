@@ -13,6 +13,7 @@ module.exports = {
       colors: {
         "login-form-bg": "#CDD7D8",
         "input-color": "#868e96",
+        "card-color": "#f1f3f5",
       },
     },
   },

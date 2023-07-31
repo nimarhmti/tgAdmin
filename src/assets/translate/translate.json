@@ -16,5 +16,11 @@
     "ADD_QUESTIONS": "طرح سوالات",
     "INBOX": "مدیریت",
     "VIEW_PROFILE": "پروفایل"
+  },
+  "CHARTS": {
+    "BUY": "خرید",
+    "SOLD": "فروش",
+    "PROFIT": "سود",
+    "DAMAGE": "ضرر"
   }
 }
