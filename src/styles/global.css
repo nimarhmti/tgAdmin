@@ -70,3 +70,6 @@ a {
 .card {
   @apply shadow-md py-2 px-2 rounded-md bg-card-color;
 }
+.content {
+  height: calc(100% - 73px);
+}

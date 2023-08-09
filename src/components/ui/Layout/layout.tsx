@@ -28,7 +28,7 @@ export const Layout: FC<PropsWithChildren> = ({ children }) => {
         <Navbar
           onMenuButtonClick={() => setShowSidebar((prevState) => !prevState)}
         />
-        {children}
+        <div className="content">{children}</div>
       </div>
     </div>
   );

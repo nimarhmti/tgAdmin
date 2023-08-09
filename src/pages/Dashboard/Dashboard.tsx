@@ -6,11 +6,11 @@ import { getRandomInt } from "../../utils";
 
 export const Dashboard = () => {
   return (
-    <div className=" flex flex-col items-center gap-3 ">
-      <div className="card flex items-center justify-center w-full  mt-10 h-96 ">
+    <div className=" flex flex-col items-center justify-evenly  h-full">
+      <div className="card flex items-center justify-center w-1/2 h-1/3 ">
         <LineChart />
       </div>
-      <div className="card flex items-center justify-center w-full  mt-2 h-96">
+      <div className="card flex items-center justify-center w-1/2 h-1/3">
         <BarChart />
       </div>
     </div>
