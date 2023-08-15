@@ -6,7 +6,13 @@
     "USERNAME": "نام کاربری",
     "PASSWORD": "رمز",
     "REPEAT_PASSWORD": "تکرار رمز",
-    "FORGET_PASSWORD": "فراموشی رمز عبور ؟"
+    "FORGET_PASSWORD": "فراموشی رمز عبور ؟",
+    "ROLE": "سمت",
+    "ADMIN": "ادمین",
+    "USER": "کاربر معمولی",
+    "STATUS": "وضعیت",
+    "ACTIVE": "فعال",
+    "DISABLED": "غیر فعال"
   },
   "SIDEBAR": {
     "ADMIN_PANEL": "پنل ادمین",
