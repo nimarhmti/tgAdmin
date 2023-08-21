@@ -1,4 +1,8 @@
 {
+  "GENERAL": {
+    "COMMENTS": "نظرات",
+    "REPLY": "پاسخ"
+  },
   "HOME_PAGE": {
     "EMAIL": "ایمیل",
     "LOGIN": "ورود",
