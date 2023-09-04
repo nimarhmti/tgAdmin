@@ -1,8 +1,6 @@
 import { useLocation } from "react-router-dom";
 import translate from "../assets/translate/translate.json";
-interface outPut {
-  Path: string;
-}
+
 export const useGetPathName = () => {
   const { pathname } = useLocation();
   const Path = pathname.replace("/", "");

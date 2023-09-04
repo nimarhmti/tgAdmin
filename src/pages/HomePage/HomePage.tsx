@@ -2,7 +2,7 @@ import { useState } from "react";
 import translate from "../../assets/translate/translate.json";
 import { LoginForm } from "../../components/LoginForm/LoginForm";
 export const HomePage = () => {
-  const [isLogin, setISignIn] = useState<boolean>(false);
+  const [isLogin] = useState<boolean>(false);
   return (
     <div className="h-screen flex">
       <div className="max-sm:w-full w-3/12 h-full flex flex-col items-center pt-36 pb-10">

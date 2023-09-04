@@ -1,6 +1,5 @@
 import { createColumnHelper } from "@tanstack/react-table";
 import translate from "../../assets/translate/translate.json";
-import { Chip } from "../ui/Chip/Chip";
 const columnHelper = createColumnHelper<any>();
 export const column = [
   columnHelper.accessor("user", {

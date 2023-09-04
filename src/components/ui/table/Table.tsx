@@ -1,26 +1,14 @@
-import { Fragment, useEffect, useMemo, useState } from "react";
+import { useMemo } from "react";
 import { ReactTableProps } from "./Table.Interface";
 import {
   getCoreRowModel,
   useReactTable,
   flexRender,
 } from "@tanstack/react-table";
-import type {
-  ColumnDef,
-  Row,
-  Table as ReactTable,
-  PaginationState,
-} from "@tanstack/react-table";
 
 export const Table = <T extends object>({
   data: tableData,
   columns: tableColumns,
-  renderSubComponent,
-  pageIndex,
-  pageSize,
-  pageCount,
-  onPaginationChange,
-  className,
 }: ReactTableProps<T>) => {
   //memorization
   const data = useMemo(() => tableData, [tableData]);

@@ -1,4 +1,3 @@
-import exp from "constants";
 import translate from "../../../assets/translate/translate.json";
 const { DEGREE_SECTION } = translate.ADD_QUESTIONS;
 const { EIGHTH, FIFTH, FIRST, FOURTH, NINTH, SECOND, SEVENTH, SIXTH, THIRD } =

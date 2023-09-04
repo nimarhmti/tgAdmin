@@ -21,7 +21,7 @@ export const Form = () => {
   const onChangeHandler = (
     e: ChangeEvent<HTMLSelectElement | HTMLInputElement | HTMLTextAreaElement>
   ) => {
-    const { value, id, name } = e.currentTarget;
+    const { value, name } = e.currentTarget;
     setData((pre) => ({
       ...pre,
       [name]: value,
