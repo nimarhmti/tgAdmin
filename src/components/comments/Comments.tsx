@@ -1,4 +1,4 @@
-import React from "react";
+
 import { column, data } from "./columns";
 import translate from "../../assets/translate/translate.json";
 import { Table } from "../ui/table/Table";

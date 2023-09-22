@@ -16,15 +16,15 @@ export const data: dataModel[] = [
 
 const columnHelper = createColumnHelper<any>();
 export const column = [
-  columnHelper.accessor("id", {
-    header: "#",
+  columnHelper.accessor("lesson", {
+    header: translate.ADD_QUESTIONS.SUBJECT,
     cell: (info) => info.getValue(),
   }),
   columnHelper.accessor("question", {
     header: translate.ADD_QUESTIONS.QUESTION,
     cell: (info) => info.getValue(),
   }),
-  columnHelper.accessor("id", {
+  columnHelper.accessor("score", {
     header: translate.GENERAL.SCORES,
     cell: (info) => <RowAction id={info.getValue()} />,
   }),

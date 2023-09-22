@@ -5,7 +5,6 @@ export const Inbox = () => {
   return (
     <div className="bg-slate-300 h-full flex flex-col items-center overflow-y-scroll gap-2">
       <Comments />
-      <Comments />
     </div>
   );
 };

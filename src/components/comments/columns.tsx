@@ -18,32 +18,27 @@ export const column = [
 
 export const data = [
   {
-    user: "نیما",
+    user: "mohhmad",
     comment: "بسیار کاربردی",
     reply: "تشکر",
   },
   {
-    user: "نیما",
-    comment: "بسیار کاربردی",
-    reply: "تشکر",
+    user: "mehdi",
+    comment: "ممنونم میشم سوالات مقاطع بالا تر را وارد کنید",
+    reply: "به زودی حتما",
   },
   {
-    user: "نیما",
-    comment: "بسیار کاربردی",
-    reply: "تشکر",
+    user: "zahra",
+    comment: "سریع و کارآمد",
+    reply: "بزرگوارید",
   },
   {
-    user: "نیما",
-    comment: "بسیار کاربردی",
-    reply: "تشکر",
+    user: "mohsen",
+    comment: "سوالات بسیار با کیفیت اند",
+    reply: "ممنوم",
   },
   {
-    user: "نیما",
-    comment: "بسیار کاربردی",
-    reply: "تشکر",
-  },
-  {
-    user: "نیما",
+    user: "moein",
     comment: "بسیار کاربردی",
     reply: "تشکر",
   },

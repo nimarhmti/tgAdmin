@@ -22,7 +22,7 @@ export const Table = <T extends object>({
     manualPagination: true,
   });
 
-  if (data.length == 0) return <p className="font-bold">سوالی یافت نشد!</p>;
+  if (!data) return <p>....</p>;
 
   //main components
   return (

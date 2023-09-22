@@ -1,5 +1,5 @@
 import { api } from "../../config/axios";
-import { addQuestionModel } from "./question.interface";
+import { addQuestionModel, allQuestionModel } from "./question.interface";
 const serviceName = "/question";
 export const addQuestion = async (data: addQuestionModel) => {
   const results = await api.post(`${serviceName}/new`, data);
@@ -7,6 +7,6 @@ export const addQuestion = async (data: addQuestionModel) => {
 };
 
 export const getAllQuestion = async () => {
-  const data = await api.get(`${serviceName}/all`);
+  const data = await api.get<allQuestionModel[]>(`${serviceName}/all`);
   return data.data;
 };
