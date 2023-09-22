@@ -12,7 +12,7 @@ export const Form = () => {
     <div className=" w-full h-28 bg-slate-100 flex gap-x-3">
       <FormInput
         name="subject"
-        label={translate.ADD_QUESTIONS.SUBJECT}
+        label={translate.ADD_QUESTIONS.DEGREE}
         onChange={onChangHandler}
       />
     </div>

@@ -1,6 +1,7 @@
 import { createColumnHelper } from "@tanstack/react-table";
 import translate from "../../assets/translate/translate.json";
 import { Chip } from "../ui/Chip/Chip";
+import { positionChecker } from "../utils/idChecker";
 export const users = [
   {
     id: 22,
@@ -24,15 +25,15 @@ export const users = [
 const columnHelper = createColumnHelper<any>();
 
 export const columns = [
-  columnHelper.accessor("userName", {
+  columnHelper.accessor("email", {
     cell: (info) => info.getValue(),
     header: translate.HOME_PAGE.USERNAME,
   }),
-  columnHelper.accessor("role", {
-    cell: (info) => info.getValue(),
+  columnHelper.accessor("id", {
+    cell: (info) => positionChecker(info.getValue()),
     header: translate.HOME_PAGE.ROLE,
   }),
-  columnHelper.accessor("activities", {
+  columnHelper.accessor("active", {
     cell: (info) => {
       const val = info.getValue();
       return val ? (

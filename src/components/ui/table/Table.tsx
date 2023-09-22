@@ -14,12 +14,15 @@ export const Table = <T extends object>({
   const data = useMemo(() => tableData, [tableData]);
   const columns = useMemo(() => tableColumns, [tableColumns]);
   //define table utils
+
   const table = useReactTable({
     data,
     columns,
     getCoreRowModel: getCoreRowModel(),
     manualPagination: true,
   });
+
+  if (data.length == 0) return <p className="font-bold">سوالی یافت نشد!</p>;
 
   //main components
   return (

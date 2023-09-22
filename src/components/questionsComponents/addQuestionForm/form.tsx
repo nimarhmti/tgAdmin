@@ -7,15 +7,24 @@ import {
   subjects,
 } from "./formUtils";
 import { formInputModel } from "./form.interface";
-
+import { useAddQuestion } from "../../../services/Questions/question.query";
+interface warningModel {
+  status: boolean;
+  msg: string;
+}
 export const Form = () => {
   const [data, setData] = useState<formInputModel>({
     answer: "",
     degree: 1,
     question: "",
     score: 1.5,
-    subject: "",
+    subject: "آموزش قرآن اول",
   });
+  const [warning, setWaring] = useState<warningModel>({
+    msg: "",
+    status: false,
+  });
+  const { mutate: addNewQuestion, isLoading } = useAddQuestion();
   const subjectIndex = data.degree as keyof typeof subjects;
 
   const onChangeHandler = (
@@ -30,11 +39,32 @@ export const Form = () => {
 
   const onSubmitHandler = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    console.log(data);
+    addNewQuestion(
+      {
+        answer: data.answer,
+        lesson: data.subject,
+        question: data.question,
+        level: data.degree.toString(),
+        score: data.score,
+      },
+      {
+        onSuccess() {
+          setWaring({
+            status: true,
+            msg: "ثبت شد",
+          });
+        },
+        onError() {
+          setWaring({
+            status: false,
+            msg: "خظایی رخ داد",
+          });
+        },
+      }
+    );
   };
-
   return (
-    <form onSubmit={onSubmitHandler} className="flex flex-wrap ">
+    <form onSubmit={onSubmitHandler} className="flex flex-wrap relative ">
       <div className="w-full flex gap-3 px-4">
         <div className="w-1/3">
           {/*------------------ degree -------------------- */}
@@ -67,6 +97,7 @@ export const Form = () => {
             name="subject"
             className="w-full outline-none h-10 text-lg rounded-sm mt-2"
             onChange={onChangeHandler}
+            value={data.subject}
           >
             {subjects[subjectIndex].map((subject: string) => (
               <option value={subject} key={subject}>
@@ -132,6 +163,26 @@ export const Form = () => {
           {translate.GENERAL.SUBMIT}
         </button>
       </div>
+      {!!warning.msg && (
+        <div
+          className={`absolute ${
+            warning.status ? "border-green-700" : "border-red-700"
+          } w-60 h-10 font-bold left-4 shadow-md rounded-md -top-9 flex items-center justify-between border-2 overflow-hidden pr-3 bg-white`}
+        >
+          {warning.msg}
+          <button
+            className={`btn ${warning.status ? "btn-green" : "btn-red"}`}
+            onClick={() =>
+              setWaring({
+                status: false,
+                msg: "",
+              })
+            }
+          >
+            تایید
+          </button>
+        </div>
+      )}
     </form>
   );
 };
